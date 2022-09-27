@@ -26,3 +26,10 @@ I am going to use this section to write my pseudocode for now.
 
     4. we need to then store the score of the game, and keep the score of 5 consecutive games to be compared at the end and prompt who won the round. a round being based on 5 games. (i would like to make it play best out of 5,  stopping the round after someone wins 3 games but lets see how we do.)
 
+Step 1:
+
+creating a function called 'getComputerChoice', 
+does it need parameters? no 
+how to randomly select a string = use a switch statement/trying not to cheat and just copy an answer, gonna figure out how to randomly select a case in the switch statement, will revise this before implementing. 
+needs to be a variable? no.
+return string selected. 
