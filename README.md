@@ -29,7 +29,62 @@ I am going to use this section to write my pseudocode for now.
 Step 1:
 
 creating a function called 'getComputerChoice', 
-does it need parameters? no 
+
+does it need parameters? a number randomly chosen between 0-2? or 1-3? 
+
 how to randomly select a string = use a switch statement/trying not to cheat and just copy an answer, gonna figure out how to randomly select a case in the switch statement, will revise this before implementing. 
-needs to be a variable? no.
-return string selected. 
+
+use getnumber *-- research
+
+needs to be a variable? yes.
+
+store and return string selected.
+
+step 2:
+create a function called 'getPlayerChoice' that creates a prompt window. use 'prompt(enter text here)'.
+
+regex for prompt = (rock\paper\scissors/i) <-- something like that will go over it later.
+
+store input value in a variable? constant? called 'playerSelection'
+
+step 3:
+
+create a funcntion called "playRound"
+
+takes two parameters - 'computerSelection' , 'playerSelection'
+
+the function compares the 'playerSelection' to the 'getComputerChoice'
+
+function (playerSelection \i, computerSelection) {
+    if (playerSelection = 'rock' && computerSelection = 'scissors' ) {
+        alert('You win! Rock beats scissors.')
+    }
+
+    else if (playerSelection = 'rock' && computerSelection = 'paper') {
+        alert('You lose! Paper beats rock.' )
+    }
+
+    else if(playerSelection = 'scissors' && computerSelection = 'paper'){
+        alert('You win! Scissors beats paper.')
+    }
+    
+    else if(playerSelection = 'scissors' && computerSelection = 'rock') {
+        alert('You lose! Rock beats scissors.')
+    }
+
+    else if(playerSelection = 'paper' && computerSelection = 'rock'){
+        alert('You win! Paper beats rock.')
+    }
+
+    else if(playerSelection = 'paper' && computerSelection = 'scissors'){
+        alert('You lose! Scissors beats paper.')
+    }
+
+    else {
+        alert('Whoah! It\'s a tie! Nobody Wins!')
+    }
+}
+
+hopefully this works.
+
+just need to figure out how to now make it take a score.
