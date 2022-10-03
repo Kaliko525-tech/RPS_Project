@@ -30,17 +30,20 @@ Step 1:
 
 creating a function called 'getComputerChoice', 
 
-does it need parameters? a number randomly chosen between 0-2? or 1-3? 
+does it need parameters? a number randomly chosen between 0-2.
 
 how to randomly select a string = use a switch statement/trying not to cheat and just copy an answer, gonna figure out how to randomly select a case in the switch statement, will revise this before implementing. 
 
-use getnumber *-- research
+use math.floor(Math.random()*3) // thought iwas called get number but this is what we want. math.random will get a number between 0 and 1, but will always be below one. so we use math.floor to round it down. we then times the math random function to give a number close to what we want.
+
+choice is stored in a variable called 'computerSelection'
 
 needs to be a variable? yes.
 
 store and return string selected.
 
 step 2:
+
 create a function called 'getPlayerChoice' that creates a prompt window. use 'prompt(enter text here)'.
 
 regex for prompt = (rock\paper\scissors/i) <-- something like that will go over it later.
@@ -87,4 +90,11 @@ function (playerSelection \i, computerSelection) {
 
 hopefully this works.
 
-just need to figure out how to now make it take a score.
+just need to figure out how to now make it take a score. --> will implement this once i get there.
+
+step 4: 
+
+use a loop to play 5 rounds
+
+
+3/10/22 --> started to implement the js got alot done and seems to be working well,just need to figure out how to make 'playerSelection' case insensitive. then work on step 4.
