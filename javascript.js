@@ -1,6 +1,7 @@
 let computerSelection = undefined;
 let playerScore = 0;
 let computerScore = 0;
+let playerInput = undefined;
 
 function getComputerChoice(){
 switch (Math.floor(Math.random() * 3))
@@ -22,12 +23,10 @@ switch (Math.floor(Math.random() * 3))
 }
 } 
 
-
-getComputerChoice();
-
-
-
 function playRound (playerSelection , computerSelection) {
+
+    
+
     if (playerSelection == 'rock' && computerSelection == 'scissors' ) {
         alert('You win! Rock beats scissors.')
 
@@ -70,6 +69,11 @@ function playRound (playerSelection , computerSelection) {
 
 }
 
-playerSelection = prompt('Input Rock, paper, or scissors.') ;
+for (let i= 0; i<5; i++){
+    getComputerChoice()
+    playerInput = prompt('Input rock, paper, or scissors.');
+    playerSelection = playerInput.toLowerCase()
+    playRound(playerSelection , computerSelection)
+}
 
-playRound(playerSelection , computerSelection)
+alert(`Player Score = ${playerScore} Computer Score = ${computerScore}.`);
