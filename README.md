@@ -88,9 +88,9 @@ function (playerSelection \i, computerSelection) {
     }
 }
 
-hopefully this works.
+hopefully this works. // It did not work but with some slight re-work i got it to work.//
 
-just need to figure out how to now make it take a score. --> will implement this once i get there.
+just need to figure out how to now make it take a score. --> will implement this once i get there. //Figured it out, created a variable called 'playerScore' and 'computerScore' set them to 0. in each if...else statement i incremented the score as needed.//
 
 step 4: 
 
@@ -98,3 +98,13 @@ use a loop to play 5 rounds
 
 
 3/10/22 --> started to implement the js got alot done and seems to be working well,just need to figure out how to make 'playerSelection' case insensitive. then work on step 4.
+
+4/10/22 --> researched and discovered how to make the 'playerInput' case sensitive, it was simply to pass that string through a lowerCase tag. so implemented that. 
+
+had some trouble getting the loop to show the prompt each round. but i figured it out and i just had to re-arrange some scripts and create a variable called 'playerInput' leave it undefined and use that variable in the loop, also had to call the function 'getComputerChoice' in there. 
+
+also figured out how to display the score. used a alert with a template literal.
+
+so i have got the game working and that was my main focus while i was implementing the steps that i wrote out in my pseudocode, but now looking over the assignment i see i need to do the following:
+
+1.
