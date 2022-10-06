@@ -107,4 +107,4 @@ also figured out how to display the score. used a alert with a template literal.
 
 so i have got the game working and that was my main focus while i was implementing the steps that i wrote out in my pseudocode, but now looking over the assignment i see i need to do the following:
 
-1.
+1. make everything work in the console, i.e. change alerts to console.log.
