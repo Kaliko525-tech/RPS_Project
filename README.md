@@ -116,3 +116,7 @@ Papa passed away so i had to take a little break to mentally recover from that,b
 I have completed my task and now i am going to install a fucntion that ask the user if they want to replay. 
 
 to reload the page i use the ?syntax? "location.reload()", i'm just unsure how to go about this. I plan to use a prompt to ask the user 'Do you want to replay?' then they must input yes or no. yes will reload the page and no will just do nothing. 
+
+installed the replay function, it works and i am happy with the project and declare it done. took a while and honestly if I think about it, it only took about 9-10 hours of actual work time to do it, so i may have taken a few weeks to get it done but the actual hours i put in was short and i found it was pretty easy. I feel I only found it easy beacause of all the pre-planning and pseudo-code i did in order to fully plan and problem solve how i was going to tackle this project and what kind of statements and functions i was going to make.
+
+In the end i did have to re-arrange some things and that makes reading my readME a little funny but it all worked out in the end, i just added a few small things and also neatened up the code a little. 
