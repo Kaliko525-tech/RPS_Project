@@ -92,5 +92,16 @@ function showWinner () {
     }
 }
 
+function rePlay() {
+    input = prompt('Do you want to play again?');
+    if (input=="yes"){
+        location.reload()
+    }
+    else{
+        console.log('Thanks for playing!')
+    }
+}
+
 game()
 showWinner()
+rePlay()
