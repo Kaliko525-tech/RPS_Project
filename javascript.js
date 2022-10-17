@@ -88,7 +88,7 @@ function showWinner () {
     }
 
     else {
-        console.log("Its's a tie!")
+        console.log("It's a tie!")
     }
 }
 
