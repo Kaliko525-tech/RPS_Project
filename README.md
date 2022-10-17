@@ -112,3 +112,7 @@ so i have got the game working and that was my main focus while i was implementi
 17/10/22
 
 Papa passed away so i had to take a little break to mentally recover from that,but im back now and getting back into the studying and the project. hoping to finish it off todday, I wasnt far off i just needed to get everything to work in the comsole. lets see how that goes.
+
+I have completed my task and now i am going to install a fucntion that ask the user if they want to replay. 
+
+to reload the page i use the ?syntax? "location.reload()", i'm just unsure how to go about this. I plan to use a prompt to ask the user 'Do you want to replay?' then they must input yes or no. yes will reload the page and no will just do nothing. 
