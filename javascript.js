@@ -69,14 +69,14 @@ function playRound (playerSelection , computerSelection) {
 
 }
 
-for (let i= 0; i<5; i++){
+function game (){
+    for (let i= 0; i<5; i++){
     getComputerChoice()
     playerInput = prompt('Input rock, paper, or scissors.');
     playerSelection = playerInput.toLowerCase() ;
     playRound(playerSelection , computerSelection)
 }
-
-showWinner();
+}
 
 function showWinner () {
     if (playerScore > computerScore) {
@@ -92,3 +92,5 @@ function showWinner () {
     }
 }
 
+game()
+showWinner()
