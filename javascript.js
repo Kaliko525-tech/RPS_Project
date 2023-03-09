@@ -7,6 +7,11 @@ const score = document.getElementById('score')
 const winner = document.getElementById('winner')
 const btn = document.querySelectorAll("button")
 
+btn[0].addEventListener('click', () => playRound('rock', computerSelection))
+btn[1].addEventListener('click', () => playRound('paper', computerSelection))
+btn[2].addEventListener('click', () => playRound('scissors', computerSelection))
+
+console.log(btn[0])
 
 
 function getComputerChoice(){
@@ -30,7 +35,7 @@ switch (Math.floor(Math.random() * 3))
 } 
 
 function playRound (playerSelection , computerSelection) {
-
+    getComputerChoice()
     console.log(playerSelection)
     console.log(computerSelection)
 
