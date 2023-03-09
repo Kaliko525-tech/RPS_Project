@@ -7,11 +7,11 @@ const score = document.getElementById('score')
 const winner = document.getElementById('winner')
 const btn = document.querySelectorAll("button")
 
+getComputerChoice()
+
 btn[0].addEventListener('click', () => playRound('rock', computerSelection))
 btn[1].addEventListener('click', () => playRound('paper', computerSelection))
 btn[2].addEventListener('click', () => playRound('scissors', computerSelection))
-
-console.log(btn[0])
 
 
 function getComputerChoice(){
@@ -40,42 +40,41 @@ function playRound (playerSelection , computerSelection) {
     console.log(computerSelection)
 
     if (playerSelection == 'rock' && computerSelection == 'scissors' ) {
-        console.log('You win! Rock beats scissors.')
+        results.textContent = 'You win! Rock beats scissors.'
 
         return playerScore++;
     }
 
     else if (playerSelection == 'rock' && computerSelection == 'paper') {
-        console.log('You lose! Paper beats rock.' )
-
+        results.textContent = 'You lose! Paper beats rock.' 
         return computerScore++;
     }
 
     else if(playerSelection == 'scissors' && computerSelection == 'paper'){
-        console.log('You win! Scissors beats paper.')
+        results.textContent = 'You win! Scissors beats paper.'
 
         return playerScore++;
     }
     
     else if(playerSelection == 'scissors' && computerSelection == 'rock') {
-        console.log('You lose! Rock beats scissors.')
+        results.textContent = 'You lose! Rock beats scissors.'
 
         return computerScore++;
     }
 
     else if(playerSelection == 'paper' && computerSelection == 'rock') {
-        console.log('You win! Paper beats rock.')
+        results.textContent = 'You win! Paper beats rock.'
 
         return playerScore++
     }
 
     else if(playerSelection == 'paper' && computerSelection == 'scissors'){
-        console.log('You lose! Scissors beats paper.')
+        results.textContent = 'You lose! Scissors beats paper.'
 
         return computerScore++;
     }
     else if(playerSelection == computerSelection)
-        console.log('Whoah! It\'s a tie! Nobody Wins!')
+        results.textContent = 'Whoah! It\'s a tie! Nobody Wins!'
     else {
         results.textContent = 'error'
     }
