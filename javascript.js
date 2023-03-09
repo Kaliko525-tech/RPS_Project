@@ -97,13 +97,7 @@ function showWinner () {
 }
 
 function restart(){
-    input = prompt('Do you want to play again?')
-    if (input === 'yes'){
-        location.reload()
-    }
-    else {
-        alert('Thanks for playing!')
-    }
+  location.reload()
 }   
 
 function showScore(){
