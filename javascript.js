@@ -2,6 +2,7 @@ let computerSelection = undefined;
 let playerScore = 0;
 let computerScore = 0;
 let playerInput = undefined;
+
 const results = document.getElementById('result')
 const score = document.getElementById('score')
 const winner = document.getElementById('winner')
@@ -9,10 +10,9 @@ const btn = document.querySelectorAll("button")
 
 getComputerChoice()
 
-btn[0].addEventListener('click', () => playRound('rock', computerSelection))
-btn[1].addEventListener('click', () => playRound('paper', computerSelection))
-btn[2].addEventListener('click', () => playRound('scissors', computerSelection))
-
+btn[0].addEventListener('click', () => play('rock',))
+btn[1].addEventListener('click', () => play('paper'))
+btn[2].addEventListener('click', () => play('scissors'))
 
 function getComputerChoice(){
 switch (Math.floor(Math.random() * 3))
@@ -36,8 +36,6 @@ switch (Math.floor(Math.random() * 3))
 
 function playRound (playerSelection , computerSelection) {
     getComputerChoice()
-    console.log(playerSelection)
-    console.log(computerSelection)
 
     if (playerSelection == 'rock' && computerSelection == 'scissors' ) {
         results.textContent = 'You win! Rock beats scissors.'
@@ -81,39 +79,42 @@ function playRound (playerSelection , computerSelection) {
 
 }
 
-//function game (){
-//    for (let i= 0; i<5; i++){
-//    getComputerChoice()
-//    playerInput = prompt('Input rock, paper, or scissors.');
-//    playerSelection = playerInput.toLowerCase() ;
-//    playRound(playerSelection , computerSelection)
-//}
-//}
-
 function showWinner () {
-    if (playerScore > computerScore) {
-        console.log(`You beat the computer! Your Score is - ${playerScore} vs ${computerScore} - Computer Score!` )
+    if (playerScore === 5) {
+        winner.textContent = "YOU WIN!"
     }
 
-    else if (computerScore > playerScore){
-        console.log(`The computer beat you! You Lose! Computer score - ${computerScore} vs ${playerScore} - Your Score!`)
+    else if (computerScore === 5){
+        winner.textContent = "YOU LOSE!"
     }
 
-    else {
-        console.log("It's a tie!")
-    }
-}
-
-function rePlay() {
-    input = prompt('Do you want to play again?');
-    if (input=="yes"){
-        location.reload()
+    else if (playerScore === 5 && computerScore === 5) {
+        winner.textContent = "It's a tie!"
     }
     else{
-        console.log('Thanks for playing!')
+
     }
 }
 
-//game()
-//showWinner()
-//rePlay()
+function restart(){
+    input = prompt('Do you want to play again?')
+    if (input === 'yes'){
+        location.reload()
+    }
+    else {
+        alert('Thanks for playing!')
+    }
+}   
+
+function showScore(){
+    score.textContent = `Player score: ${playerScore} - ${computerScore} : Computer Score`
+}
+
+function play(selection) {
+    playRound(selection , computerSelection)
+    showScore()
+    if (playerScore === 5 || computerScore === 5){
+        showWinner()
+        //restart()
+ }
+}
