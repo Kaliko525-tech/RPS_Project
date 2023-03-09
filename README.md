@@ -120,3 +120,12 @@ to reload the page i use the ?syntax? "location.reload()", i'm just unsure how t
 installed the replay function, it works and i am happy with the project and declare it done. took a while and honestly if I think about it, it only took about 9-10 hours of actual work time to do it, so i may have taken a few weeks to get it done but the actual hours i put in was short and i found it was pretty easy. I feel I only found it easy beacause of all the pre-planning and pseudo-code i did in order to fully plan and problem solve how i was going to tackle this project and what kind of statements and functions i was going to make.
 
 In the end i did have to re-arrange some things and that makes reading my readME a little funny but it all worked out in the end, i just added a few small things and also neatened up the code a little. 
+
+
+9th of March 2023
+
+i have revisited as intructed but with this UI practive, i got everything working fine, just not sure if the code is right or neat or if there is actually a better way to do this. I'm sure there is. The one thing I really want to do though is create a hideable/blur set of buttons that will basically prompt you to restart the game. When I get this right i will consider this revist done. 
+
+so far I know I can focus and blur elements in a event, i just need to figure out how to implement it into my code. 
+
+I have created a div that contains the buttons with a 'p' attribute, the 'p' attribute will have a text asking "would you like to restart?" followed by the two buttons. Yes will reload the page and No will prompt a text saying "thanks for playing" 
