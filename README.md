@@ -129,3 +129,5 @@ i have revisited as intructed but with this UI practice, i got everything workin
 so far I know I can focus and blur elements in a event, i just need to figure out how to implement it into my code. 
 
 I have created a div that contains the buttons with a 'p' attribute, the 'p' attribute will have a text asking "would you like to restart?" followed by the two buttons. Yes will reload the page and No will prompt a text saying "thanks for playing" 
+
+got the restart popu up working I am happy and done with this assignment for now.
