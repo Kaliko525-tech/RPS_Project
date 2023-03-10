@@ -124,7 +124,7 @@ In the end i did have to re-arrange some things and that makes reading my readME
 
 9th of March 2023
 
-i have revisited as intructed but with this UI practive, i got everything working fine, just not sure if the code is right or neat or if there is actually a better way to do this. I'm sure there is. The one thing I really want to do though is create a hideable/blur set of buttons that will basically prompt you to restart the game. When I get this right i will consider this revist done. 
+i have revisited as intructed but with this UI practice, i got everything working fine, just not sure if the code is right or neat or if there is actually a better way to do this. I'm sure there is. The one thing I really want to do though is create a hideable/blur set of buttons that will basically prompt you to restart the game. When I get this right i will consider this revist done. 
 
 so far I know I can focus and blur elements in a event, i just need to figure out how to implement it into my code. 
 

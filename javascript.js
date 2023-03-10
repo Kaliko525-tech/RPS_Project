@@ -7,12 +7,16 @@ const results = document.getElementById('result')
 const score = document.getElementById('score')
 const winner = document.getElementById('winner')
 const btn = document.querySelectorAll("button")
+const para = document.getElementById("para")
+const popup = document.getElementById("restart-prompt")
 
 getComputerChoice()
 
 btn[0].addEventListener('click', () => play('rock',))
 btn[1].addEventListener('click', () => play('paper'))
 btn[2].addEventListener('click', () => play('scissors'))
+btn[3].addEventListener('click', () => location.reload()) //yes button
+btn[4].addEventListener('click', () => para.textContent = 'Thanks for playing!') //no button
 
 function getComputerChoice(){
 switch (Math.floor(Math.random() * 3))
@@ -82,23 +86,14 @@ function playRound (playerSelection , computerSelection) {
 function showWinner () {
     if (playerScore === 5) {
         winner.textContent = "YOU WIN!"
+        popup.style.display = 'block'
     }
 
     else if (computerScore === 5){
         winner.textContent = "YOU LOSE!"
-    }
-
-    else if (playerScore === 5 && computerScore === 5) {
-        winner.textContent = "It's a tie!"
-    }
-    else{
-
+        popup.style.display = 'block'
     }
 }
-
-function restart(){
-  location.reload()
-}   
 
 function showScore(){
     score.textContent = `Player score: ${playerScore} - ${computerScore} : Computer Score`
@@ -109,6 +104,5 @@ function play(selection) {
     showScore()
     if (playerScore === 5 || computerScore === 5){
         showWinner()
-        //restart()
  }
 }
